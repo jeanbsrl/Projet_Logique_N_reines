@@ -1,0 +1,104 @@
+c CryptoMiniSat version 5.6.8
+c CryptoMiniSat SHA revision 0acd09613073840747161396ac47abf35ec29320
+c -- header says num vars:             16
+c -- header says num clauses:          84
+c -- clauses added: 84
+c -- xor clauses added: 0
+c -- vars added 16
+c --> Executing strategy token: handle-comps
+c --> Executing strategy token: scc-vrepl
+c [scc] new: 0 BP 0M
+c [vrep] vars 0 lits 0 rem-bin-cls 0 rem-long-cls 0 BP 0M
+c --> Executing strategy token: cache-clean
+c --> Executing strategy token: cache-tryboth
+c --> Executing strategy token: sub-impl
+c [impl sub] bin: 0 w-visit: 32
+c --> Executing strategy token: intree-probe
+c [scc] new: 0 BP 0M
+c [vrep] vars 0 lits 0 rem-bin-cls 0 rem-long-cls 0 BP 0M
+c [intree] Set 6 vars hyper-added: 11 trans-irred::0 trans-red::1
+c --> Executing strategy token: probe
+c --> Executing strategy token: sub-str-cls-with-bin
+c [distill] cache-based irred--  cl tried        4 cl-sh     0 cl-rem    2 lit-rem      0
+c [distill] cache-based   red--  cl tried        0 cl-sh     0 cl-rem    0 lit-rem      0
+c --> Executing strategy token: distill-cls
+c [distill] long cls tried: 1/0 cl-short:1 lit-r:2
+c [distill] long useful: 2/2/2 lits-rem: 4 0-depth-assigns: 0
+c --> Executing strategy token: scc-vrepl
+c [scc] new: 13 BP 0M
+c [vrep] vars 7 lits 204 rem-bin-cls 58 rem-long-cls 0 BP 0M
+c --> Executing strategy token: sub-impl
+c [impl sub] bin: 4 w-visit: 32
+c --> Executing strategy token: str-impl
+c [impl str] lit bin: 2 (by stamp: 0) set-var: 2 w-visit: 32
+c --> Executing strategy token: sub-impl
+c [impl sub] bin: 0 w-visit: 32
+c --> Executing OCC strategy token(s): 'occ-backw-sub-str,occ-clean-implicit,occ-bve,occ-bva,occ-ternary-res,occ-xor,'
+c [occ] mem usage for occur      0 MB
+c [occ] mem usage for occur      0 MB
+c Mem for watch alloc      : 0           MB (0.00      %)
+c Mem for watch array      : 0           MB (0.00      %)
+c --> Executing OCC strategy token: occ-backw-sub-str
+c [occ-backw-sub-str-long-w-bins] subs: 0 str: 0 tried: 0 0-depth ass: 0
+c [occ-sub-str-long-w-long] sub: 0 str: 0 tried: 0/0 (0.00)
+c --> Executing OCC strategy token: occ-clean-implicit
+c --> Executing OCC strategy token: occ-bve
+c [occ-empty-res] Empty resolvent elimed: 1
+c [occ-bve] iter v-elim 0
+c cl_inc_rate=2.00, var_dec_rate=1.00 (grow=0)
+c Reduced to 0 vars, 0 cls (grow=0)
+c x n vars       : 0
+c  #try to eliminate:      0
+c  #var-elim        :      0
+c  #T-o: N
+c  #T-r: 100.00%
+c  #T  : 0.00
+c [occur] 0.00 is overhead
+c [occur] link-in T: 0.00 cleanup T: 0.00
+c --> Executing OCC strategy token: occ-bva
+c [occ-bva] global numcalls: 0
+c --> Executing OCC strategy token: occ-ternary-res
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.00
+c [occ-xor] found      0
+c [xor-add-lem] added unit 0 bin 0
+c --> Executing strategy token: cl-consolidate
+c Not consolidating memory.
+c --> Executing strategy token: str-impl
+c [impl str] lit bin: 0 (by stamp: 0) set-var: 0 w-visit: 32
+c --> Executing strategy token: cache-clean
+c --> Executing strategy token: sub-str-cls-with-bin
+c [distill] cache-based irred--  cl tried        0 cl-sh     0 cl-rem    0 lit-rem      0
+c [distill] cache-based   red--  cl tried        0 cl-sh     0 cl-rem    0 lit-rem      0
+c --> Executing strategy token: distill-cls
+c [distill] long cls tried: 0/0 cl-short:0 lit-r:0
+c [distill] long useful: 0/0/0 lits-rem: 0 0-depth-assigns: 0
+c --> Executing strategy token: scc-vrepl
+c [scc] new: 0 BP 0M
+c [vrep] vars 0 lits 0 rem-bin-cls 0 rem-long-cls 0 BP 0M
+c --> Executing strategy token: check-cache-size
+c --> Executing strategy token: renumber
+c [renumber]
+c [consolidate] mini
+c global_timeout_multiplier: 4.40
+c   type VSIDS  rest  conf freevar  IrrL  IrrB l/longC  l/allC RedL0 RedL1 RedL2  RedB l/longC  l/allC
+s SATISFIABLE
+c ------- FINAL TOTAL SEARCH STATS ---------
+c restarts                 : 1           (0.00      confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c decisions                : 0           (0.00      % random)
+c propagations             : 0
+c decisions/conflicts      : 0.00
+c conflicts                : 0
+c conf lits non-minim      : 0           (0.00      lit/confl)
+c conf lits final          : 0.00
+c cache hit re-learnt cl   : 0           (0.00      % of confl)
+c red which0               : 0           (0.00      % of confl)
+c props/decision           : 0.00
+c props/conflict           : 0.00
+c 0-depth assigns          : 8           (0.00      % vars)
+c [occ-substr] long subBySub: 0 subByStr: 0 lits-rem-str: 0
+c [scc] new: 13 BP 0M  T: 0.00
+c Conflicts in UIP         : 0
+c Mem used                 : 0.00        MB
+v -1 2 -3 -4 -5 -6 -7 8 9 -10 -11 -12 -13 -14 15 -16 0
